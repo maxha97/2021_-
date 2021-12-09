@@ -1,0 +1,10 @@
+def solution(s):
+    num = len(s)
+    if num%2 == 0:
+        index1 = num/2
+        index2 = num/2 + 1
+        return num[index1-1: index2 ]
+    else:
+        index1 = round(num/2)
+        return num[index1-1]
+        
